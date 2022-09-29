@@ -1,9 +1,9 @@
-package by.epam.lesson.hierarchy.bean.electronic_device.air_conditioning_device.air_cond_device.humidifier;
+package by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.humidifier;
 
 import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
-import by.epam.lesson.hierarchy.bean.electronic_device.air_conditioning_device.air_cond_device.AirConditioningDevice;
-import by.epam.lesson.hierarchy.bean.electronic_device.air_conditioning_device.air_cond_device.AirConditioningDeviceType;
+import by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.AirConditioningDevice;
+import by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.AirConditioningDeviceType;
 
 import java.io.Serializable;
 import java.util.Objects;
