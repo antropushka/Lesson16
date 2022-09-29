@@ -4,6 +4,7 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.home_device.HomeDevice;
 import by.epam.lesson.hierarchy.bean.electronic_device.home_device.HomeDeviceType;
+import by.epam.lesson.hierarchy.view.ConsoleOutPutter;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -43,6 +44,16 @@ public class WindowWasher extends HomeDevice implements Serializable {
 
     public void setOperatingTime(double operatingTime) {
         this.operatingTime = operatingTime;
+    }
+
+    @Override
+    public void turnOn() {
+        ConsoleOutPutter.printHelloMessage();
+    }
+
+    @Override
+    public void turnOff() {
+        ConsoleOutPutter.printGoodByeMessage();
     }
 
     @Override

@@ -4,6 +4,7 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.AirConditioningDevice;
 import by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.AirConditioningDeviceType;
+import by.epam.lesson.hierarchy.view.ConsoleOutPutter;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -45,6 +46,16 @@ public class AirConditioner extends AirConditioningDevice implements Serializabl
 
     public void setFreonType(FreonType freonType) {
         this.freonType = freonType;
+    }
+
+    @Override
+    public void turnOn() {
+        ConsoleOutPutter.printHelloMessage();
+    }
+
+    @Override
+    public void turnOff() {
+        ConsoleOutPutter.printGoodByeMessage();
     }
 
     @Override

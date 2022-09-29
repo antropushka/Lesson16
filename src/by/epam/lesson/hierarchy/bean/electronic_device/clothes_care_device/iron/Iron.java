@@ -4,6 +4,7 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.clothes_care_device.ClothesCareDevice;
 import by.epam.lesson.hierarchy.bean.electronic_device.clothes_care_device.ClothesCareDeviceType;
+import by.epam.lesson.hierarchy.view.ConsoleOutPutter;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -43,6 +44,16 @@ public class Iron extends ClothesCareDevice implements Serializable {
 
     public void setWaterTankVolume(double waterTankVolume) {
         this.waterTankVolume = waterTankVolume;
+    }
+
+    @Override
+    public void turnOn() {
+        ConsoleOutPutter.printHelloMessage();
+    }
+
+    @Override
+    public void turnOff() {
+        ConsoleOutPutter.printGoodByeMessage();
     }
 
     @Override

@@ -31,6 +31,8 @@ public abstract class AirConditioningDevice extends ElectronicDevice {
     }
 
 
+
+
     public AirConditioningDeviceType getType() {
         return type;
     }
@@ -61,6 +63,16 @@ public abstract class AirConditioningDevice extends ElectronicDevice {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    @Override
+    public void turnOn() {
+
+    }
+
+    @Override
+    public void turnOff() {
+
     }
 
     @Override

@@ -31,6 +31,9 @@ public abstract class ElectronicDevice {
         this.power = power;
     }
 
+    public abstract void turnOn();
+    public abstract void turnOff();
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

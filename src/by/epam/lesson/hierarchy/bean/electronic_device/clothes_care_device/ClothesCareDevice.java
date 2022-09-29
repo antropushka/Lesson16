@@ -3,6 +3,7 @@ package by.epam.lesson.hierarchy.bean.electronic_device.clothes_care_device;
 import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.ElectronicDevice;
+import by.epam.lesson.hierarchy.view.ConsoleOutPutter;
 
 import java.util.Objects;
 
@@ -48,6 +49,14 @@ public abstract class ClothesCareDevice extends ElectronicDevice {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    @Override
+    public void turnOn() {
+    }
+
+    @Override
+    public void turnOff() {
     }
 
     @Override

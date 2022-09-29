@@ -4,6 +4,7 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.AirConditioningDevice;
 import by.epam.lesson.hierarchy.bean.electronic_device.air_cond_device.AirConditioningDeviceType;
+import by.epam.lesson.hierarchy.view.ConsoleOutPutter;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -44,6 +45,16 @@ public class Humidifier extends AirConditioningDevice implements Serializable {
 
     public void setWaterTankCapacity(Double waterTankCapacity) {
         this.waterTankCapacity = waterTankCapacity;
+    }
+
+    @Override
+    public void turnOn() {
+        ConsoleOutPutter.printHelloMessage();
+    }
+
+    @Override
+    public void turnOff() {
+        ConsoleOutPutter.printGoodByeMessage();
     }
 
     @Override
