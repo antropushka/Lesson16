@@ -4,12 +4,10 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.ElectronicDevice;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-public class HomeDevice extends ElectronicDevice implements Serializable {
+public abstract class HomeDevice extends ElectronicDevice {
 
-    private static final long serialVersionUID = 1L;
     private HomeDeviceType homeDeviceType;
     private Brand brand;
     private Double price;

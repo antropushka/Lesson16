@@ -4,12 +4,9 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.ElectronicDevice;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-public class ClothesCareDevice extends ElectronicDevice implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public abstract class ClothesCareDevice extends ElectronicDevice {
 
     private ClothesCareDeviceType type;
     private Brand brand;

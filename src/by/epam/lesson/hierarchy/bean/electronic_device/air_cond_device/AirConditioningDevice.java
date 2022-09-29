@@ -4,12 +4,9 @@ import by.epam.lesson.hierarchy.bean.electronic_device.Brand;
 import by.epam.lesson.hierarchy.bean.electronic_device.DeviceType;
 import by.epam.lesson.hierarchy.bean.electronic_device.ElectronicDevice;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-public class AirConditioningDevice extends ElectronicDevice implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public abstract class AirConditioningDevice extends ElectronicDevice {
 
     private AirConditioningDeviceType type;
     private Double noiseLevel;
